@@ -30,6 +30,9 @@ Conversion notes:
 
 The ChadCollins.com ChatGPT Awesomer Chrome Extension is designed to make working with Chat GPT easier and more efficient. With this extension, you can enhance your experience when using Chat GPT on the OpenAI platform.
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/sdUcQdKLP50/0.jpg)](https://www.youtube.com/watch?v=sdUcQdKLP50)
+
+Youtube Link - Click my Logo! 
 
 ## Features
 
