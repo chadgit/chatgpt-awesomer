@@ -1,0 +1,43 @@
+{
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "manifest_version": 3,
+  "name": "ChadCollins.com ChatGPT Awesomer",
+  "short_name": "ChatGPT",
+  "version": "1.0.0",
+  "description": "Making Chat GPT easier to work with.",
+  "homepage_url": "https://ChadCollins.com",
+  "icons": {
+    "16": "media/icons/icon16.png",
+    "48": "media/icons/icon48.png",
+    "128": "media/icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Find the ChatGPT Tab"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "omnibox": {
+    "keyword": "gpt"
+  },
+  "permissions": ["contextMenus", "storage"],
+  "commands": {
+    "open-hotkey": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+K",
+        "mac": "Command+Shift+K",
+        "windows": "Ctrl+Shift+K",
+        "linux": "Ctrl+Shift+K",
+        "chromeos": "Ctrl+Shift+K"
+      },
+      "description": "Open ChatGPT"
+    }
+  }
+}
